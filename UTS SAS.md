@@ -179,87 +179,69 @@ C. Instalasi Net Framework 3.5
 ```markdown
 - Seting ke ip static menggunakan cmd, ketik sconfig
 ```
+![e1](https://user-images.githubusercontent.com/61863147/143681927-5dea2976-5614-40f5-aaff-95241be6d31e.PNG)
+![e2](https://user-images.githubusercontent.com/61863147/143681931-10c1d2ba-386a-45f6-a4cf-4988b5548858.PNG)
+![e3](https://user-images.githubusercontent.com/61863147/143681934-e69c90e1-ee67-4b34-b26d-f411d929e1d2.PNG)
 
-![image](https://user-images.githubusercontent.com/62064492/143060040-3187b4bc-c2ef-442e-924a-36ef3cebe5a4.png)
-
-![image](https://user-images.githubusercontent.com/62064492/143060060-92f95ebf-600c-4c5e-8df0-fea1880b923f.png)
-
-![image](https://user-images.githubusercontent.com/62064492/143060089-187e310d-b30c-46d6-b23a-0e22b7b89e6c.png)
 
 ```markdown
 - Setting IP Address Server-ADDS dan mengarah DNS ke IP address static yang digunakan.
 ```
-
-![image](https://user-images.githubusercontent.com/62064492/143060278-638d7a68-2f9f-4e0a-ac89-b449a6b29bc1.png)
-
-```markdown
-- Klik “Promote this server to a domain controller untuk konfigurasi ADDS
-```
-![image](https://user-images.githubusercontent.com/62064492/143060623-08bef976-72e9-424a-a31b-668860218189.png)
+![e4](https://user-images.githubusercontent.com/61863147/143681962-5e47590d-c084-40c3-b715-11469babd3bf.PNG)
 
 ```markdown
-- Pilih “Add a new forest” dan masukkan nama domain yang akan digunakan pada Root Domain Name. Misalnya disini saya menggunakan domain “Aim.com”
+- Pilih “Add a new forest” dan masukkan nama domain yang akan digunakan pada Root Domain Name. Misalnya disini saya menggunakan domain “Budhi.com”
 ```
-![image](https://user-images.githubusercontent.com/62064492/143062005-9155bdfa-ea42-4cb3-91ec-3e4b0072998a.png)
+![e5](https://user-images.githubusercontent.com/61863147/143681991-bd38a60b-b943-4ca6-968d-5bbf7c26fe6b.PNG)
 
 ```markdown
 - Pilih “Windows Server 2016” pada functional level, beri tanda centang pada “Domain Name System (DNS) server” dan ”Global Catalog (GC)”. Serta mengisi password Directory Services Restore Mode dengan kriteria strong password.
 ```
-
-![image](https://user-images.githubusercontent.com/62064492/143062084-1c336f87-a714-444b-badc-ce385c59e73c.png)
+![e6](https://user-images.githubusercontent.com/61863147/143681998-f78546dc-4fcf-4a64-bf56-0e31fb5753cd.PNG)
 
 ```markdown
 - Lewati bagian DNS Options, lalu klik “Next”.
 ```
-
-![image](https://user-images.githubusercontent.com/62064492/143064837-a5dd8d07-d77c-4cbe-a96d-eb6b2a120c6e.png)
+![e7](https://user-images.githubusercontent.com/61863147/143682011-3b3073ee-eb7b-46a8-8d30-5432f149d4e4.PNG)
 
 ```markdown
 - Mengisi “The NetBIOS domain name” sesuai dengan nama domain yang digunakan.
 ```
-![image](https://user-images.githubusercontent.com/62064492/143062175-cfc66680-5ce8-40e5-b879-13239b76cd74.png)
+![e8](https://user-images.githubusercontent.com/61863147/143682022-d79fd5ff-f108-4e14-8fd0-abe526bada0b.PNG)
 
 ```markdown
 - Lewati bagian Paths, klik “Next”.
 ```
-
-![image](https://user-images.githubusercontent.com/62064492/143062494-2c7a08ce-49f3-40db-ad12-4490ec112b99.png)
+![e9](https://user-images.githubusercontent.com/61863147/143682035-f4f1bedf-0c63-4ef4-84db-b1644e82581f.PNG)
 
 ```markdown
 - Cek konfigurasi yang ditentukan pada Review Options, jika suda ok. Klik “Next”.
 ```
-![image](https://user-images.githubusercontent.com/62064492/143062586-0f8f8e3b-1a2b-4546-9779-f70238828d1a.png)
+![e10](https://user-images.githubusercontent.com/61863147/143682042-b891a99f-54a8-4141-bf5c-8612a52fbfdb.PNG)
 
 ```markdown
 - Jika sudah ada tulisan All prerequisite checks passed successfully. Klik “Install” untuk apply konfigurasi yang sudah ditentukan.
 ```
-![image](https://user-images.githubusercontent.com/62064492/143062766-88e37beb-aa83-4b18-ba2d-b20fec2e6c8f.png)
+![e11](https://user-images.githubusercontent.com/61863147/143682047-68050723-0631-4140-8b79-5fe6dbcd52fe.PNG)
 
 ```markdown
 - Tunggu hingga proses instalasi selesai.
 ```
-
-![image](https://user-images.githubusercontent.com/62064492/143062877-c7a3a0e7-cdd8-404a-9ac2-a4204c5bfd46.png)
+![e12](https://user-images.githubusercontent.com/61863147/143682068-3b84f875-c52e-402b-bb57-2a5c3263e8eb.PNG)
 
 ```markdown
 - Setelah selesai menginstal, maka laptop akan ke restart otomatis. Kemudian login menggunakan password administrator
 ```
-![image](https://user-images.githubusercontent.com/62064492/143063003-05d43408-9b66-47a4-b1eb-c0244616cba2.png)
+![e13](https://user-images.githubusercontent.com/61863147/143682075-5780a553-ef69-481c-93b3-535dd9f5b314.PNG)
 
 ```markdown
 - Untuk mengecek hasil konfigurasi, buka cmd dan ketikkan “netdom query fsmo”
-```
-
-![image](https://user-images.githubusercontent.com/62064492/143063107-abcd1b4e-08d8-44a0-a75b-c1365c377279.png)
 
 ```markdown
 - Setelah login dengan Active Directory Domain Controller, buka properti TCP/IP koneksi jaringan Anda. Anda dapat melihat Alamat IP server DNS yang disukai
 ```
-
-![image](https://user-images.githubusercontent.com/62064492/143063183-bdb4c10d-c204-41d6-b2b5-67c1ccd33348.png)
-
-![image](https://user-images.githubusercontent.com/62064492/143063217-4601d716-724f-482e-a080-0107a4cf0656.png)
+![e14](https://user-images.githubusercontent.com/61863147/143682121-1965533a-392b-4699-93b4-e3da7a34f9f7.PNG)
 
 ```markdown
-Selesai yeye yuppi!!!
+FINISH YEAY !!
 ```
